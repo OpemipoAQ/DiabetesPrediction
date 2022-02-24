@@ -8,7 +8,7 @@ from PIL import Image
 st.write("""
 # DIABETES STATUS PREDICTION APP
 """)
-image=Image.open('med_photo.jpg')
+image=Image.open('DiabetesImg.jpg')
 st.image(image, caption='Just a medical photo',width=500)
 
 model=pickle.load(open('class_model.pkl','rb'))
